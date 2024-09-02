@@ -1,6 +1,4 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import * as AOS from 'aos';
-import { isPlatformBrowser } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -13,12 +11,4 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
-
-  ngOnInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      AOS.init();
-    }
-  }
 }
