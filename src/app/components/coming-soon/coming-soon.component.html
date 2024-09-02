@@ -1,0 +1,78 @@
+<div class="coming-soon">
+  <div class="content my-container">
+    <div class="logo-wrapper">
+      <img
+        ngSrc="../../../assets/img/logo-soprano-vesinet.png"
+        alt="Logo du restaurant italien Soprano Vesinet"
+        fill
+        priority
+      />
+    </div>
+
+    <p data-aos="fade-up" data-aos-duration="800">
+      Notre site internet est en cours de rénovation pour mieux vous servir !
+    </p>
+    <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+      En attendant, venez découvrir nos plats et partagez un moment convivial et
+      une ambiance chaleureuse avec nous. Notre restaurant vous accueille
+      toujours avec plaisir.
+    </p>
+
+    <div
+      class="location"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+      data-aos-offset="0"
+    >
+      <fa-icon
+        [icon]="'faMapMarkedAlt' | convertStringLabelToFontawesomeIcon"
+      ></fa-icon>
+      <span> 19 Rue Jean Laurent, 78110 Le Vésinet </span>
+    </div>
+
+    <div class="actions">
+      <a
+        class="phone"
+        href="tel:+33123456789"
+        data-aos="fade-right"
+        data-aos-delay="800"
+        data-aos-duration="1000"
+        data-aos-offset="10"
+
+      >
+          <fa-icon
+            [icon]="'faPhoneVolume' | convertStringLabelToFontawesomeIcon"
+          ></fa-icon>
+
+         +33 1 39 76 85 78
+      </a>
+      <a
+        class="card"
+        target="_blank"
+        href="../../../assets/pdf/carte-restaurant-soprano-vesinet.pdf"
+        data-aos="fade-left"
+        data-aos-delay="800"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+
+      >
+          <fa-icon
+            [icon]="'faUtensils' | convertStringLabelToFontawesomeIcon"
+          ></fa-icon>
+
+        Découvrir La Carte
+      </a>
+    </div>
+
+    <div class="networks">
+      @for(network of networks; track $index){
+      <a href="{{ network.link }}" target="_blank" class="network">
+        <fa-icon
+          [icon]="network.icon | convertStringLabelToFontawesomeIcon"
+        ></fa-icon>
+      </a>
+      }
+    </div>
+  </div>
+</div>

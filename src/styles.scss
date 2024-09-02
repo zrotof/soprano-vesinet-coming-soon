@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: Optimaltstd, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--project-black-primary-color);
+}
+
+.my-container {
+  max-width: 1700px;
+  padding: 10px 20px;
+}
