@@ -19,10 +19,12 @@ export class ComingSoonComponent {
   networks = [
     {
       icon : "faInstagram",
+      name: "Instagram",
       link : "https://www.instagram.com/lesopranovesinet?igsh=bG8xOGE2ZjZmNWRn"
     },
     {
       icon : "faFacebookF",
+      name: "Facebook",
       link : "https://m.facebook.com/LeSopranoVesinet"
     }
   ]

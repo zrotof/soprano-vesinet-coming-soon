@@ -5,10 +5,5 @@ export const routes: Routes = [
     {
         path: "",
         component : ComingSoonComponent
-    },
-    {
-        path: "**",
-        redirectTo: "/",
-        pathMatch: "full"
     }
 ];

@@ -26,7 +26,7 @@
     </div>
 
     <div class="actions">
-      <a class="phone" href="tel:+33123456789">
+      <a class="phone" href="tel:+33123456789" role="button">
         <fa-icon
           [icon]="'faPhoneVolume' | convertStringLabelToFontawesomeIcon"
         ></fa-icon>
@@ -48,7 +48,13 @@
 
     <div class="networks">
       @for(network of networks; track $index){
-      <a href="{{ network.link }}" target="_blank" class="network">
+      <a
+        rel="noopener noreferrer"
+        href="{{ network.link }}"
+        target="_blank"
+        class="network"
+        [attr.aria-label]="'Ouvrez notre compte ' + network.name"
+        >
         <fa-icon
           [icon]="network.icon | convertStringLabelToFontawesomeIcon"
         ></fa-icon>

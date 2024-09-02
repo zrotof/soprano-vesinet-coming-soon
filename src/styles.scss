@@ -1,11 +1,16 @@
 @import "variables.scss";
 
+@font-face {
+  font-family: 'OptimaLTStd';
+  src: url('https://db.onlinewebfonts.com/c/a1bc18b26205f46862beafc4d4cbcee0?family=OptimaLTStd') format('woff2');
+  font-display: swap; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  font-family: Optimaltstd, sans-serif;
+  font-family: 'OptimaLTStd', sans-serif;
 }
 
 html {
